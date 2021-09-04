@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="FNF_main_menu_assets.png">
+	<!-- Created with Adobe Animate version 18.0.1.115 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="donate basic0000" x="0" y="0" width="445" height="70"/>
+	<SubTexture name="donate white0000" x="0" y="70" width="590" height="103"/>
+	<SubTexture name="freeplay basic0000" x="0" y="173" width="485" height="65"/>
+	<SubTexture name="freeplay white0000" x="0" y="238" width="627" height="93"/>
+	<SubTexture name="options basic0000" x="0" y="331" width="487" height="74"/>
+	<SubTexture name="options white0000" x="0" y="405" width="613" height="104"/>
+	<SubTexture name="story mode basic0000" x="0" y="509" width="615" height="66"/>
+	<SubTexture name="story mode white0000" x="0" y="575" width="838" height="101"/>
+</TextureAtlas>

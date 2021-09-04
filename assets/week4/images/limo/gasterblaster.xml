@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gasterblaster.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gasterblaster coming in0000" x="0" y="0" width="0" height="0" frameX="-108" frameY="-1182" frameWidth="985" frameHeight="2152"/>
+	<SubTexture name="gasterblaster coming in0001" x="0" y="0" width="0" height="0" frameX="-108" frameY="-1182" frameWidth="985" frameHeight="2152"/>
+	<SubTexture name="gasterblaster coming in0002" x="768" y="1927" width="768" height="1954" frameX="-108" frameY="0" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster coming in0003" x="0" y="1927" width="768" height="1329" frameX="-108" frameY="-677" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster coming in0004" x="6825" y="938" width="985" height="989" frameX="0" frameY="-1163" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster coming in0005" x="6825" y="938" width="985" height="989" frameX="0" frameY="-1163" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster coming in0006" x="5880" y="938" width="945" height="944" frameX="-20" frameY="-1159" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster coming in0007" x="5045" y="938" width="835" height="835" frameX="-75" frameY="-1171" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster idle0000" x="3509" y="938" width="768" height="768" frameX="0" frameY="-3" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster idle0001" x="3509" y="938" width="768" height="768" frameX="0" frameY="-3" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster idle0002" x="4277" y="938" width="768" height="774" frameX="0" frameY="0" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster idle0003" x="4277" y="938" width="768" height="774" frameX="0" frameY="0" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster idle0004" x="3509" y="938" width="768" height="768" frameX="0" frameY="-3" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster idle0005" x="3509" y="938" width="768" height="768" frameX="0" frameY="-3" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster idle0006" x="4277" y="938" width="768" height="774" frameX="0" frameY="0" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster idle0007" x="4277" y="938" width="768" height="774" frameX="0" frameY="0" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster idle0008" x="3509" y="938" width="768" height="768" frameX="0" frameY="-3" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster idle0009" x="3509" y="938" width="768" height="768" frameX="0" frameY="-3" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster idle0010" x="4277" y="938" width="768" height="774" frameX="0" frameY="0" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster idle0011" x="4277" y="938" width="768" height="774" frameX="0" frameY="0" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster idle0012" x="3509" y="938" width="768" height="768" frameX="0" frameY="-3" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster idle0013" x="3509" y="938" width="768" height="768" frameX="0" frameY="-3" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0000" x="0" y="0" width="1882" height="938" frameX="-108" frameY="-1110" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0001" x="1882" y="0" width="1882" height="922" frameX="-108" frameY="-1117" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0002" x="3764" y="0" width="1903" height="768" frameX="-108" frameY="-1182" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0003" x="5667" y="0" width="1852" height="859" frameX="-108" frameY="-1136" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0004" x="0" y="938" width="1843" height="865" frameX="-108" frameY="-1133" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0005" x="1843" y="938" width="1666" height="837" frameX="-108" frameY="-1147" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0006" x="3509" y="938" width="768" height="768" frameX="-108" frameY="-1182" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0007" x="3509" y="938" width="768" height="768" frameX="-108" frameY="-1182" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0008" x="4277" y="938" width="768" height="774" frameX="-108" frameY="-1179" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0009" x="4277" y="938" width="768" height="774" frameX="-108" frameY="-1179" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0010" x="5045" y="938" width="835" height="835" frameX="-75" frameY="-1171" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0011" x="5880" y="938" width="945" height="944" frameX="-20" frameY="-1159" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0012" x="6825" y="938" width="985" height="989" frameX="0" frameY="-1163" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0013" x="6825" y="938" width="985" height="989" frameX="0" frameY="-1163" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0014" x="0" y="1927" width="768" height="1329" frameX="-108" frameY="-677" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0015" x="768" y="1927" width="768" height="1954" frameX="-108" frameY="0" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0016" x="1536" y="1927" width="0" height="0" frameX="-108" frameY="-1182" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster leaving0017" x="1536" y="1927" width="0" height="0" frameX="-108" frameY="-1182" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster preparing0000" x="3509" y="938" width="768" height="768" frameX="0" frameY="-72" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster preparing0001" x="3509" y="938" width="768" height="768" frameX="0" frameY="-72" frameWidth="2011" frameHeight="2152"/>
+	<SubTexture name="gasterblaster preparing0002" x="1536" y="1927" width="768" height="837" frameX="0" frameY="-37" frameWidth="996" frameHeight="938"/>
+	<SubTexture name="gasterblaster preparing0003" x="2304" y="1927" width="768" height="859" frameX="0" frameY="-26" frameWidth="996" frameHeight="938"/>
+	<SubTexture name="gasterblaster preparing0004" x="3072" y="1927" width="768" height="865" frameX="0" frameY="-23" frameWidth="996" frameHeight="938"/>
+	<SubTexture name="gasterblaster preparing0005" x="3840" y="1927" width="768" height="768" frameX="0" frameY="-72" frameWidth="996" frameHeight="938"/>
+	<SubTexture name="gasterblaster preparing0006" x="4608" y="1927" width="996" height="938"/>
+	<SubTexture name="gasterblaster preparing0007" x="5604" y="1927" width="996" height="922" frameX="0" frameY="-7" frameWidth="996" frameHeight="938"/>
+	<SubTexture name="gasterblaster shooting0000" x="0" y="3881" width="1915" height="938"/>
+	<SubTexture name="gasterblaster shooting0001" x="1915" y="3881" width="1915" height="922" frameX="0" frameY="-7" frameWidth="1915" frameHeight="938"/>
+	<SubTexture name="gasterblaster shooting0002" x="3830" y="3881" width="1886" height="931" frameX="0" frameY="-4" frameWidth="1915" frameHeight="938"/>
+	<SubTexture name="gasterblaster shooting0003" x="5716" y="3881" width="1886" height="928" frameX="0" frameY="-4" frameWidth="1915" frameHeight="938"/>
+	<SubTexture name="gasterblaster shooting0004" x="0" y="4819" width="1843" height="938" frameX="0" frameY="0" frameWidth="1915" frameHeight="938"/>
+	<SubTexture name="gasterblaster shooting0005" x="1843" y="4819" width="1843" height="922" frameX="0" frameY="-7" frameWidth="1915" frameHeight="938"/>
+	<SubTexture name="gasterblaster shooting0006" x="3686" y="4819" width="1870" height="931" frameX="0" frameY="-4" frameWidth="1915" frameHeight="938"/>
+	<SubTexture name="gasterblaster shooting0007" x="5556" y="4819" width="1870" height="928" frameX="0" frameY="-4" frameWidth="1915" frameHeight="938"/>
+	<SubTexture name="gasterblaster shooting0008" x="0" y="3881" width="1915" height="938"/>
+	<SubTexture name="gasterblaster shooting0009" x="1915" y="3881" width="1915" height="922" frameX="0" frameY="-7" frameWidth="1915" frameHeight="938"/>
+	<SubTexture name="gasterblaster shooting0010" x="3830" y="3881" width="1886" height="931" frameX="0" frameY="-4" frameWidth="1915" frameHeight="938"/>
+	<SubTexture name="gasterblaster shooting0011" x="5716" y="3881" width="1886" height="928" frameX="0" frameY="-4" frameWidth="1915" frameHeight="938"/>
+	<SubTexture name="gasterblaster shooting0012" x="0" y="4819" width="1843" height="938" frameX="0" frameY="0" frameWidth="1915" frameHeight="938"/>
+	<SubTexture name="gasterblaster shooting0013" x="1843" y="4819" width="1843" height="922" frameX="0" frameY="-7" frameWidth="1915" frameHeight="938"/>
+	<SubTexture name="gastershoot0000" x="0" y="5757" width="768" height="768" frameX="0" frameY="-4" frameWidth="768" frameHeight="775"/>
+	<SubTexture name="gastershoot0001" x="0" y="5757" width="768" height="768" frameX="0" frameY="0" frameWidth="768" frameHeight="775"/>
+	<SubTexture name="gastershoot0002" x="0" y="5757" width="768" height="768" frameX="0" frameY="-7" frameWidth="768" frameHeight="775"/>
+	<SubTexture name="gastershoot0003" x="0" y="5757" width="768" height="768" frameX="0" frameY="-4" frameWidth="768" frameHeight="775"/>
+</TextureAtlas>
