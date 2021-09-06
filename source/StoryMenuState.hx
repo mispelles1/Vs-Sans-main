@@ -26,7 +26,7 @@ class StoryMenuState extends MusicBeatState
 
 	var weekData:Array<Dynamic> = [
 		['Tutorial'],
-		['stmpwyfs', 'Megalovania', 'Forborne']
+		['stmpwyfs', 'Megalovania']
 	];
 	var curDifficulty:Int = 1;
 
@@ -251,7 +251,7 @@ class StoryMenuState extends MusicBeatState
 			if (controls.ACCEPT)
 			{
 				selectWeek();
-				LoadingState.loadAndSwitchState(new VideoState("assets/videos/firstCutscene/firstCutScene.webm", new PlayState()));
+				LoadingState.loadAndSwitchState(new VideoState("assets/videos/b_STMPWYFS/firstCutscene.webm", new PlayState()));
 			}
 		}
 
@@ -259,7 +259,7 @@ class StoryMenuState extends MusicBeatState
 		{
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			movedBack = true;
-			FlxG.switchState(new MainMenuState());
+			FlxG.switchState(new StoryMenuState());
 		}
 
 		super.update(elapsed);

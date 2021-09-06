@@ -337,11 +337,11 @@ class Character extends FlxSprite
 
 
 				addOffset('idle', -5);
-				addOffset("singUP", -29, 27);
+				addOffset("singUP", -29, 69);
 				addOffset("singRIGHT", -38, -7);
 				addOffset("singLEFT", 12, -6);
 				addOffset("singDOWN", -10, -50);
-				addOffset("singUPmiss", -29, 27);
+				addOffset("singUPmiss", -29, 69);
 				addOffset("singRIGHTmiss", -30, 21);
 				addOffset("singLEFTmiss", 12, 24);
 				addOffset("singDOWNmiss", -11, -19);
@@ -356,14 +356,15 @@ class Character extends FlxSprite
 				trace(tex.frames.length);
 
 				animation.addByPrefix('firstDeath', "firstDeath", 24, false);
-				animation.addByPrefix('deathLoop', "firstDeath", 24, true);
+				animation.addByPrefix('deathLoop', "deathLoop", 24, true);
 				animation.addByPrefix('deathConfirm', "deathConfirm", 24, false);
+				animation.play('firstDeath');
 
 				addOffset('firstDeath', 37, 11);
 				addOffset('deathLoop', 37, 5);
-				addOffset('deathConfirm', 37, 69);
-
+				addOffset('deathConfirm', 86, 69);
 				playAnim('firstDeath');
+				flipX = true;
 			case 'bf-christmas':
 				var tex = Paths.getSparrowAtlas('characters/bfChristmas');
 				frames = tex;

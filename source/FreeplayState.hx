@@ -25,6 +25,8 @@ using StringTools;
 class FreeplayState extends MusicBeatState
 {
 	var songs:Array<SongMetadata> = [];
+	public static var songUnlocked:Array<Bool> = [true, true, false];
+	public static var songVisible:Array<Bool> = [true, true, false];
 
 	var selector:FlxText;
 	var curSelected:Int = 0;
@@ -99,6 +101,7 @@ class FreeplayState extends MusicBeatState
 		gradientBar.y = FlxG.height - gradientBar.height;
 		add(gradientBar);
 		gradientBar.scrollFactor.set(0, 0);
+		
 
 		var backdrop:FlxBackdrop;
 		add(backdrop = new FlxBackdrop(Paths.image('shatterFreeplay')));

@@ -123,6 +123,7 @@ class PlayState extends MusicBeatState
 
 	private var camZooming:Bool = false;
 	private var curSong:String = "";
+	var inCutscene:Bool = false;
 
 	private var gfSpeed:Int = 1;
 	public var health:Float = 1; //making public because sethealth doesnt work without it
@@ -193,7 +194,6 @@ class PlayState extends MusicBeatState
 
 	public static var theFunne:Bool = true;
 	var funneEffect:FlxSprite;
-	var inCutscene:Bool = false;
 	public static var repPresses:Int = 0;
 	public static var repReleases:Int = 0;
 
@@ -544,8 +544,8 @@ class PlayState extends MusicBeatState
 
 					var hall:FlxSprite = new FlxSprite(-335, -200).loadGraphic(Paths.image('JudgementHall_bg'));
 					hall.antialiasing = true;
-					hall.setGraphicSize(Std.int(hall.width * 1.5));
-					hall.scrollFactor.set(0.9, 0.5);
+					hall.setGraphicSize(Std.int(hall.width * 0.8));
+					//hall.scrollFactor.set(0.9, 0.5);
 					hall.updateHitbox();
 					add(hall);
 			}
@@ -821,8 +821,8 @@ class PlayState extends MusicBeatState
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
 			case 'snas':
-				dad.x += -450;
-				dad.y += 110;
+				dad.x += -150;
+				dad.y += 115;
 				camPos.set(dad.getGraphicMidpoint().y + 0, dad.getGraphicMidpoint().x);
 		}
 
@@ -847,6 +847,10 @@ class PlayState extends MusicBeatState
 			case 'mallEvil':
 				boyfriend.x += 320;
 				dad.y -= 80;
+			case 'snasHall':
+				boyfriend.x += 420;
+				gf.x += 135;
+				gf.y += 35;
 			case 'school':
 				boyfriend.x += 200;
 				boyfriend.y += 220;
@@ -2470,6 +2474,13 @@ class PlayState extends MusicBeatState
 			FlxG.save.data.downscroll = false;
 		}
 
+		if (storyPlaylist.length <= 0)
+		{
+
+
+
+		}
+
 		if (FlxG.save.data.fpsCap > 290)
 			(cast (Lib.current.getChildAt(0), Main)).setFPSCap(290);
 
@@ -2481,7 +2492,6 @@ class PlayState extends MusicBeatState
 		}
 		#end
 
-		canPause = false;
 		FlxG.sound.music.volume = 0;
 		vocals.volume = 0;
 		if (SONG.validScore)
@@ -2500,37 +2510,25 @@ class PlayState extends MusicBeatState
 		}
 		else
 		{
+	
 			if (isStoryMode)
 			{
-				campaignScore += Math.round(songScore);
+				FlxTransitionableState.skipNextTransIn = true;
+				FlxTransitionableState.skipNextTransOut = true;
+
+				campaignScore +=(songScore);
 
 				storyPlaylist.remove(storyPlaylist[0]);
 
 				if (storyPlaylist.length <= 0)
 				{
-					FlxG.sound.playMusic(Paths.music('freakyMenu'));
+					//MainMenuState.reRoll = true;
+					
 
-					transIn = FlxTransitionableState.defaultTransIn;
-					transOut = FlxTransitionableState.defaultTransOut;
+					LoadingState.loadAndSwitchState(new VideoState("assets/videos/b_after Meglovania/thirdCutscene.webm",new BeatFrst()));
 
-					FlxG.switchState(new StoryMenuState());
-
-					#if windows
-					if (luaModchart != null)
-					{
-						luaModchart.die();
-						luaModchart = null;
-					}
-					#end
-
-					// if ()
-					StoryMenuState.weekUnlocked[Std.int(Math.min(storyWeek + 1, StoryMenuState.weekUnlocked.length - 1))] = true;
-
-					if (SONG.validScore)
-					{
-						NGio.unlockMedal(60961);
-						Highscore.saveWeekScore(storyWeek, campaignScore, storyDifficulty);
-					}
+					if (storyDifficulty == 2)
+						FlxG.save.data.megalo = true;
 
 					FlxG.save.data.weekUnlocked = StoryMenuState.weekUnlocked;
 					FlxG.save.flush();
@@ -2548,34 +2546,27 @@ class PlayState extends MusicBeatState
 					trace('LOADING NEXT SONG');
 					trace(PlayState.storyPlaylist[0].toLowerCase() + difficulty);
 
-					FlxTransitionableState.skipNextTransIn = true;
-					FlxTransitionableState.skipNextTransOut = true;
 					prevCamFollow = camFollow;
-
-					if (SONG.song.toLowerCase() == 'Megalovania')
-					{
-						FlxG.switchState(new VideoState("assets/videos/secondCutscene/secondCutScene.webm", new PlayState()));
-					}
-
+					
 					PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + difficulty, PlayState.storyPlaylist[0]);
-
+					FlxG.sound.music.stop();
 					switch(song.toLowerCase())
 					{
 						case 'stmpwyfs':
-							LoadingState.loadAndSwitchState(new VideoState("assets/videos/thirdCutscene/thirdCutscene.webm", new PlayState()));
-						case 'Megalovania':
-							LoadingState.loadAndSwitchState(new VideoState("assets/videos/secondCutscene/secondCutScene.webm", new PlayState()));
+							LoadingState.loadAndSwitchState(new VideoState("assets/videos/after a_STMPWYFS/secondCutscene.webm",new PlayState()));
 						default:
 							LoadingState.loadAndSwitchState(new PlayState());
 					}
-					FlxG.sound.music.stop();
 
 				}
 			}
 			else
 			{
-				trace('WENT BACK TO FREEPLAY??');
-				FlxG.switchState(new FreeplayState());
+				if (song.toLowerCase() == 'Megalovania')
+					//FlxG.save.data.megalo = true;
+				//MainMenuState.reRoll = true;
+				FlxG.switchState(new MainMenuState());
+				
 			}
 		}
 	}

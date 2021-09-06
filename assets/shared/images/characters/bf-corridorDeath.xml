@@ -45,7 +45,7 @@
 	<SubTexture name="firstDeath0040" x="505" y="1264" width="57" height="50" frameX="-218" frameY="-222" frameWidth="860" frameHeight="436"/>
 	<SubTexture name="firstDeath0041" x="505" y="1264" width="57" height="50" frameX="-218" frameY="-222" frameWidth="860" frameHeight="436"/>
 	<SubTexture name="firstDeath0042" x="505" y="1264" width="57" height="50" frameX="-218" frameY="-222" frameWidth="860" frameHeight="436"/>
-	<SubTexture name="firstDeath0043" x="505" y="1264" width="57" height="50" frameX="-218" frameY="-222" frameWidth="860" frameHeight="436"/>
+	<SubTexture name="deathLoop0000" x="505" y="1264" width="57" height="50" frameX="-218" frameY="-222" frameWidth="860" frameHeight="436"/>
 	<SubTexture name="deathConfirm0000" x="562" y="1264" width="57" height="51" frameX="-7" frameY="-7" frameWidth="72" frameHeight="65"/>
 	<SubTexture name="deathConfirm0001" x="619" y="1264" width="53" height="48" frameX="-9" frameY="-8" frameWidth="72" frameHeight="65"/>
 	<SubTexture name="deathConfirm0002" x="672" y="1264" width="72" height="65"/>

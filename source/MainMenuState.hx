@@ -17,6 +17,7 @@ import flixel.util.FlxColor;
 import io.newgrounds.NG;
 import lime.app.Application;
 import flixel.addons.display.FlxBackdrop;
+import flixel.util.FlxTimer;
 
 #if windows
 import Discord.DiscordClient;
@@ -37,12 +38,13 @@ class MainMenuState extends MusicBeatState
 	#end
 
 	var bfMenu:FlxSprite;
-	//lol hi goomba -mispelles
 
 	var newGaming:FlxText;
+	public static var reRoll:Bool = true;
 	var newGaming2:FlxText;
 	var newInput:Bool = true;
 	var bg:FlxSprite = new FlxSprite(-89).loadGraphic(Paths.image('menuDesat'));
+	var unlocked:FlxSprite = new FlxSprite(0).loadGraphic(Paths.image('unlocked'));
 
 	public static var nightly:String = "";
 
@@ -141,12 +143,43 @@ class MainMenuState extends MusicBeatState
 		changeItem();
 
 		super.create();
+
+
+		/*if (reRoll)
+		{
+			FlxG.sound.music.fadeIn(4, 0, 0.7);
+			new FlxTimer().start(0.4, function(tmr:FlxTimer)
+			{
+				
+				add(unlocked);
+				FlxG.camera.fade(FlxColor.BLACK, 5, true, function()
+				{
+					unlocked.screenCenter();
+				});
+					
+			});
+
+			
+			
+		}
+
+		if (!reRoll)
+		{
+			FlxG.sound.music.fadeIn(4, 0, 0.7);
+			reRoll = false;
+		}*/
 	}
 
+	
+	
+
+
+	
 	var selectedSomethin:Bool = false;
 
 	override function update(elapsed:Float)
 	{
+
 		if (FlxG.sound.music.volume < 0.8)
 		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
@@ -215,13 +248,12 @@ class MainMenuState extends MusicBeatState
 										#end
 										trace("Story Menu Selected");
 									case 'freeplay':
+										
 										FlxG.switchState(new FreeplayState());
+								
 										#if windows
 										DiscordClient.changePresence("Goin' in FreePlay!!", null);
 										#end
-
-										trace("Freeplay Menu Selected");
-
 									case 'options':
 										FlxG.switchState(new OptionsMenu());
 										
@@ -229,6 +261,7 @@ class MainMenuState extends MusicBeatState
 										DiscordClient.changePresence("Goin' in Options!!", null);
 										#end
 								}
+								
 							});
 						}
 					});

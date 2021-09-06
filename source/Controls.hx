@@ -27,6 +27,7 @@ enum abstract Action(String) to String from String
 	var RIGHT_R = "right-release";
 	var DOWN_R = "down-release";
 	var ACCEPT = "accept";
+	var SHIFT = "shift";
 	var BACK = "back";
 	var PAUSE = "pause";
 	var RESET = "reset";
@@ -49,6 +50,7 @@ abstract Action(String) to String from String
 	var RIGHT_R = "right-release";
 	var DOWN_R = "down-release";
 	var ACCEPT = "accept";
+	var SHIFT = "shift";
 	var BACK = "back";
 	var PAUSE = "pause";
 	var RESET = "reset";
@@ -75,6 +77,7 @@ enum Control
 	DOWN;
 	RESET;
 	ACCEPT;
+	SHIFT;
 	BACK;
 	PAUSE;
 	CHEAT;
@@ -107,6 +110,7 @@ class Controls extends FlxActionSet
 	var _rightR = new FlxActionDigital(Action.RIGHT_R);
 	var _downR = new FlxActionDigital(Action.DOWN_R);
 	var _accept = new FlxActionDigital(Action.ACCEPT);
+	var _shift = new FlxActionDigital(Action.SHIFT);
 	var _back = new FlxActionDigital(Action.BACK);
 	var _pause = new FlxActionDigital(Action.PAUSE);
 	var _reset = new FlxActionDigital(Action.RESET);
@@ -186,6 +190,11 @@ class Controls extends FlxActionSet
 	inline function get_ACCEPT()
 		return _accept.check();
 
+	public var SHIFT(get, never):Bool;
+
+	inline function get_SHIFT()
+		return _shift.check();
+
 	public var BACK(get, never):Bool;
 
 	inline function get_BACK()
@@ -224,6 +233,7 @@ class Controls extends FlxActionSet
 		add(_rightR);
 		add(_downR);
 		add(_accept);
+		add(_shift);
 		add(_back);
 		add(_pause);
 		add(_reset);
@@ -252,6 +262,7 @@ class Controls extends FlxActionSet
 		add(_rightR);
 		add(_downR);
 		add(_accept);
+		add(_shift);
 		add(_back);
 		add(_pause);
 		add(_reset);
@@ -306,6 +317,7 @@ class Controls extends FlxActionSet
 			case LEFT: _left;
 			case RIGHT: _right;
 			case ACCEPT: _accept;
+			case SHIFT: _shift;
 			case BACK: _back;
 			case PAUSE: _pause;
 			case RESET: _reset;
@@ -347,6 +359,8 @@ class Controls extends FlxActionSet
 				func(_downR, JUST_RELEASED);
 			case ACCEPT:
 				func(_accept, JUST_PRESSED);
+			case SHIFT:
+				func(_shift, JUST_PRESSED);
 			case BACK:
 				func(_back, JUST_PRESSED);
 			case PAUSE:
@@ -577,6 +591,7 @@ class Controls extends FlxActionSet
 		inline bindKeys(Control.LEFT, [FlxKey.fromString(FlxG.save.data.leftBind), FlxKey.LEFT]);
 		inline bindKeys(Control.RIGHT, [FlxKey.fromString(FlxG.save.data.rightBind), FlxKey.RIGHT]);
 		inline bindKeys(Control.ACCEPT, [Z, SPACE, ENTER]);
+		inline bindKeys(Control.SHIFT, [TAB, ENTER, SPACE]);
 		inline bindKeys(Control.BACK, [BACKSPACE, ESCAPE]);
 		inline bindKeys(Control.PAUSE, [P, ENTER, ESCAPE]);
 		inline bindKeys(Control.RESET, [FlxKey.fromString(FlxG.save.data.killBind)]);
